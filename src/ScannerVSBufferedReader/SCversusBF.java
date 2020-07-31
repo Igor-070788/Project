@@ -22,7 +22,9 @@ public class SCversusBF {
         System.out.println(num+3);
         */
 
-        int num = Integer.parseInt(br.readLine());
+        /*int num = Integer.parseInt(br.readLine());
         System.out.println(num+4);
+                 */
+        
     }
 }
