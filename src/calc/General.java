@@ -1,25 +1,23 @@
 package calc;
 
-import java.util.Scanner;
+    import java.util.Scanner;
+    import calc.Answer; // подгружаю переменные из класса Answer - ans
 
-public class General {
+    public class General {
+                public static void main(String[] args) {
+                    Scanner input = new Scanner(System.in);
+                    Calculator calc = new Calculator();
+                    String myinput;
 
-    public static void main(String[] args) {
-        String numb1;
-        String numb2;
-        String oper = null;
-        Rimnumb rim = new Rimnumb();
-
-        System.out.print("Введите выражение типа: a + b, a - b, a * b, a / b");
-        Scanner scanner = new Scanner(System.in);
-        numb1 = scanner.nextLine();
-        oper = scanner.next();
-        numb2 = scanner.nextLine();
-
-        int numb1 = toArab
-        if (numb1 > 0 || numb1 < 10 || numb2 > 0 || numb2 < 10  ){
-            throw new NumberFormatException("Неверный формат чисел");
-        }
+                    while (true) {
+                        System.out.println("Input: ");
+                        myinput = input.nextLine();
+                    }
+                    if (ans.success)
+                        System.out.println(ans.result);
+                    else {
+                        for (String error: ans.errors)
+                            System.out.println(error);
+                        }
+                }
     }
-}
-
